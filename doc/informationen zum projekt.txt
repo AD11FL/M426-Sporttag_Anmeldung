@@ -1,0 +1,25 @@
+asp.net
+
+login bereits vorhanden
+
+datenmodel
+
+benötigt
+azure
+sql datenbank aufsetzen
+erkennung schüler/lehrer
+informationen
+
+dynamisch für sommer winter
+schüler anmeldungen
+lehrer diagramansicht auswahl als xls download
+
+hauptadmin sportarten einsetzen
+nicht lange speichern(bei sommer winterdaten löschen und umgekehrt
+
+app anmelden bei microsoft
+bei azure webapplikation anmelden um zu veröfftlichen
+
+basilmonti m426
+
+https://github.com/basilmonti/m426
