@@ -1,0 +1,386 @@
+﻿/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../../fonts/poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url('../../fonts/poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('../../fonts/poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url('../../fonts/poppins/Poppins-SemiBold.ttf');
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Poppins-Regular, sans-serif ;
+    font-size: 15px !important;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ login ]*/
+
+.limiter {
+    width: 100%;
+    margin: 0 auto;
+    display: flex; /* IE10 Consumer Preview */
+}
+
+.container-login {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box; /* Safari / Chrome 10 */
+    display: -webkit-flex; /* Safari / Chrome 10 */
+    display: -moz-box; /* Mozilla Firefox */
+    display: -moz-flex; /* Mozilla Firefox */
+    display: -ms-flexbox; /* IE10 Consumer Preview */
+    display: -o-flex; /* Opera */
+    display: flex; /* W3C Markup, IE11+ */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+}
+
+.wrap-login {
+    width: 390px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 44px 55px 44px 55px;
+    background: #fff; /* Wenn Hintergrund nicht ladet*/
+    background: rgba(225, 225, 225, 0.9); 
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.6);
+    -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+.container-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.6;
+    background: aliceblue; /*Falls Bilder nicht laden*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://source.unsplash.com/1600x900/?wintersport,summersport");
+}
+
+.img-fluid {
+    width: 100%;
+    padding-bottom: 8px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/*------------------------------------------------------------------
+[ Alert validate ]*/
+
+.validate-input {
+    position: relative;
+}
+
+.alert-validate::before {
+    content: attr(data-validate);
+    position: absolute;
+    max-width: 70%;
+    background-color: none;
+    border: 1px solid #c80000;
+    border-radius: 2px;
+    padding: 4px 25px 4px 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0px;
+    pointer-events: none;
+    font-family: Poppins-Regular;
+    color: #c80000;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+}
+
+.alert-validate::after {
+    content: "\f06a";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #c80000;
+    display: block;
+    position: absolute;
+    background-color: none;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 5px;
+}
+
+.alert-validate:hover:before {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*------------------------------------------------------------------
+[ Form ]*/
+
+.login-form {
+    width: 100%;
+}
+
+.title {
+    display: block;
+    font-family: Poppins-Bold;
+    font-size: 25px;
+    color: #333333;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 65px;
+}
+
+
+/*------------------------------------------------------------------
+[ Input ]*/
+
+.wrap-input {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #4b4e51;
+    margin-bottom: 37px;
+}
+
+.input {
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    color: #212529;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    padding: 0 5px;
+}
+
+.focus-input {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.focus-input::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+
+    -webkit-transition: all 0.4s; /* Safari / Chrome 10 */
+    -o-transition: all 0.4s; /* Opera */
+    -moz-transition: all 0.4s; /* Mozilla Firefox */
+    transition: all 0.4s; /* W3C Markup, IE10+ */
+
+    background: #00ace6;
+    background: -webkit-linear-gradient(left, #00a0e5, #007399); /* Safari / Chrome 10 */
+    background: -o-linear-gradient(left, #00a0e5, #007399); /* Opera */
+    background: -moz-linear-gradient(left, #00a0e5, #007399); /* Mozilla Firefox */
+    background: -ms-linear-gradient(left, #00a0e5, #007399); /* IE10 Consumer Preview */
+    background: linear-gradient(left, #00a0e5, #007399); /* W3C Markup, IE10 Release Preview */
+}
+
+.focus-input::after {
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    color: #4b4e51;
+    line-height: 1.2;
+    content: attr(data-placeholder);
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 16px;
+    left: 0px;
+    padding-left: 5px;
+
+    -webkit-transition: all 0.4s; /* Safari / Chrome 10 */
+    -o-transition: all 0.4s; /* Opera */
+    -moz-transition: all 0.4s; /* Mozilla Firefox */
+    transition: all 0.4s; /* W3C Markup, IE10+ */
+}
+
+.input:focus + .focus-input::after {
+    top: -15px;
+}
+
+.input:focus + .focus-input::before {
+    width: 100%;
+}
+
+.has-val.input + .focus-input::after {
+    top: -15px;
+}
+
+.has-val.input + .focus-input::before {
+    width: 100%;
+}
+
+
+
+
+/*------------------------------------------------------------------
+[ Button show password ]*/
+.btn-show-pass {
+    font-size: 15px;
+    color: #4b4e51;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    padding-right: 5px;
+    cursor: pointer;
+
+    display: -webkit-box; /* Safari / Chrome 10 */
+    display: -webkit-flex; /* Safari / Chrome 10 */
+    display: -moz-box; /* Mozilla Firefox */
+    display: -ms-flexbox; /* IE10 Consumer Preview */
+    display: flex; /* W3C Markup, IE10 Release Preview */
+
+    -webkit-transition: all 0.4s; /* Safari / Chrome 10 */
+    -o-transition: all 0.4s; /* Opera */
+    -moz-transition: all 0.4s; /* Mozilla Firefox */
+    transition: all 0.4s; /* W3C Markup, IE10+ */
+}
+
+.btn-show-pass:hover {
+    color: #00a0e5;
+}
+
+/*------------------------------------------------------------------
+[ Button ]*/
+.container-login-form-btn {
+    display: -webkit-box; /* Safari / Chrome 10 */
+    display: -webkit-flex; /* Safari / Chrome 10 */
+    display: -moz-box; /* Mozilla Firefox */
+    display: -ms-flexbox; /* IE10 Consumer Preview */
+    display: flex; /* W3C Markup, IE10 Release Preview */
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 13px;
+}
+
+.wrap-login-form-btn {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.login-form-bgbtn {
+    position: absolute;
+    z-index: -1;
+    width: 300%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+
+    background: #00ace6;
+    background: -webkit-linear-gradient(right, #00a0e5, #007399,#00a0e5, #007399); /* Safari / Chrome 10 */
+    background: -o-linear-gradient(right, #00a0e5, #007399, #00a0e5, #007399); /* Opera */
+    background: -moz-linear-gradient(right, #00a0e5, #007399,#00a0e5, #007399); /* Mozilla Firefox */
+    background: -ms-linear-gradient(right, #00a0e5, #007399,#00a0e5, #007399); /* IE10 Consumer Preview */
+    background: linear-gradient(right, #00a0e5, #007399,#00a0e5, #007399); /* W3C Markup, IE10 Release Preview */
+
+    -webkit-transition: all 0.4s; /* Safari / Chrome 10 */
+    -o-transition: all 0.4s; /* Opera */
+    -moz-transition: all 0.4s; /* Mozilla Firefox */
+    transition: all 0.4s; /* W3C Markup, IE10 Release Preview */
+    transform: translateZ(0);
+}
+
+.login-form-btn {
+    font-family: Poppins-Medium;
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.2;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+    background: unset;
+}
+
+.wrap-login-form-btn:hover .login-form-bgbtn {
+    left: 0;
+}
+
+button {
+    outline: none !important;
+    border: none;
+    background: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/*------------------------------------------------------------------
+[ Responsive ]*/
+
+@media (max-width: 576px) {
+    .wrap-login {
+        padding: 77px 15px 33px 15px;
+    }
+}

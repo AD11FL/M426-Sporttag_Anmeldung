@@ -1,0 +1,150 @@
+﻿/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../../fonts/poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url('../../fonts/poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('../../fonts/poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url('../../fonts/poppins/Poppins-SemiBold.ttf');
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+
+body, html {
+    height: 100%;
+    font-family: Poppins-Regular, "Helvetica Neue", sans-serif !important;
+}
+
+body {
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.div-padding-btm {
+    padding-bottom: 30px;
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Header ]*/
+
+.container-header {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    margin: 10px !important;
+}
+
+.title {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Button ]*/
+.container-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Dropdown Klassenauswahl ]*/
+.btn-dropdown {
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, 0) ;
+}
+
+.dropdown-menu li:hover{
+    width: 100%;
+}
+
+.divider {
+    width: 100%;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Checkbox ]*/
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+}
+
+input[type="checkbox"][id^="cb"] {
+    display: none;
+}
+
+label {
+    border: 1px solid grey;
+    padding: 10px;
+    display: block;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+label img {
+    height: 200px;
+    width: 300px;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+    text-align: center;
+}
+
+:checked + label {
+    border-color: #ddd;
+}
+
+:checked + label img {
+    transform: scale(0.9);
+}
