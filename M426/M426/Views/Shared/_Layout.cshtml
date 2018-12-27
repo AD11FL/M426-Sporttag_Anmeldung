@@ -12,7 +12,7 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    @* Navbar wird noch gelöscht *@
+    @*TODO: Navbar wird noch gelöscht *@
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -25,9 +25,6 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Startseite", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Info", "About", "Home")</li>
-                    <li>@Html.ActionLink("Kontakt", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Schülerformular", "Schueler", "Home")</li>
                     <li>@Html.ActionLink("Lehrer", "Lehrer", "Home")</li>
                     <li>@Html.ActionLink("Test Login", "Login", "Home")</li>
