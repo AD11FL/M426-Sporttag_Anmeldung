@@ -37,7 +37,7 @@ namespace M426.Controllers
 
         public ActionResult Schueler_Informationen()
         {
-            ViewBag.Message = "Das ist die Seite für die Schüler";
+            ViewBag.Message = "Das ist die Informationsseite für die Schüler";
 
             return View();
         }
@@ -51,7 +51,7 @@ namespace M426.Controllers
 
         public ActionResult Lehrer_Informationen()
         {
-            ViewBag.Message = "Das ist die Seite für die Schüler";
+            ViewBag.Message = "Das ist die Informationsseite für die Lehrer";
 
             return View();
         }
