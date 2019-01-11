@@ -35,9 +35,23 @@ namespace M426.Controllers
             return View();
         }
 
+        public ActionResult Schueler_Informationen()
+        {
+            ViewBag.Message = "Das ist die Seite für die Schüler";
+
+            return View();
+        }
+
         public ActionResult Lehrer()
         {
             ViewBag.Message = "Das ist die Seite für die Lehrer";
+
+            return View();
+        }
+
+        public ActionResult Lehrer_Informationen()
+        {
+            ViewBag.Message = "Das ist die Seite für die Schüler";
 
             return View();
         }

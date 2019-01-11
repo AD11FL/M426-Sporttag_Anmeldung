@@ -300,6 +300,8 @@
     <Content Include="Content\Images\ski_snowboard.jpg" />
     <Content Include="Content\Images\ski.jpg" />
     <Content Include="Content\Images\langlauf.jpg" />
+    <Content Include="Views\Home\Schueler_Informationen.cshtml" />
+    <Content Include="Views\Home\Lehrer_Informationen.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
