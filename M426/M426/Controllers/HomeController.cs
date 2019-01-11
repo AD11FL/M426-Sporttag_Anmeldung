@@ -56,6 +56,13 @@ namespace M426.Controllers
             return View();
         }
 
+        public ActionResult Admin()
+        {
+            ViewBag.Message = "Das ist die Seite für die Admins";
+
+            return View();
+        }
+
         public ActionResult Login()
         {
             ViewBag.Message = "Das ist eine Testseite";

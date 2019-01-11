@@ -1,0 +1,34 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Adminseite";
+}
+
+<div class="div-padding-btm">
+    <span>
+        Foobar
+    </span>
+</div>
+
+<div class="div-padding-btm">
+    <div class="btn-group btn-dropdown">
+        <button id="auswahlKlassen" type="button" class="btn btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Klasse <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Klasse 1</a></li>
+            <li><a href="#">Klasse 2</a></li>
+            <li><a href="#">Klasse 3</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Alle Klassen</a></li>
+        </ul>
+    </div>
+</div>
+
+@* Balkendiagramm *@
+<div id="chart" style="width: 400px; height: 600px"></div>
+
+<div class="container-btn">
+    <button id="btnExcelDownload" class="btn btn-default">
+        Excel Download
+    </button>
+</div>
