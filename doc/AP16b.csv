@@ -1,0 +1,18 @@
+PersonID;Nachname;Vorname;Beruf;Klasse;Geburtstag;Email;Strasse;PLZ;Ort;Telefon;Datum
+669481;Ahmeti;Landrit;"Informatiker Applikationsentwicklung";"AP16 b";16.05.2000;landrit.ahmeti@edu.tbz.ch;"Lättenstrasse 4";8952;Schlieren;"043 534 94 76";
+683276;Amrein;Marcel;"Informatiker Applikationsentwicklung";"AP16 b";07.03.1999;marcel.amrein@edu.tbz.ch;"Erlistrasse 6b";6312;Steinhausen;"041 760 91 46";
+683273;Blank;"Noël Mathieu";"Informatiker Applikationsentwicklung";"AP16 b";27.08.2000;noel.blank@edu.tbz.ch;"Lettenstrasse 8b";8305;Dietlikon;"044 833 52 72";
+669839;Boldo;Benjamin;"Informatiker Applikationsentwicklung";"AP16 b";27.02.2001;benjamin.boldo@edu.tbz.ch;"Giesserstrasse 27";8406;Winterthur;"052 202 35 53";
+683272;Corten;"Alexander Francis Danai";"Informatiker Applikationsentwicklung";"AP16 b";16.08.1997;alexander.corten@edu.tbz.ch;"Bahnhofstrasse 14";6340;Baar;;
+686926;Dhokhar;"Kelsang Tsering";"Informatiker Applikationsentwicklung";"AP16 b";05.03.1997;kelsang.dhokhar@edu.tbz.ch;"Tödistrasse 10";8645;Jona;"055 280 46 68";
+670265;Flückiger;Adrian;"Informatiker Applikationsentwicklung";"AP16 b";11.10.2000;adrian.flueckiger@edu.tbz.ch;"Seewadelstrasse 4";8335;Hittnau;"044 951 21 57";
+678401;Geser;Nicolas;"Informatiker Applikationsentwicklung";"AP16 b";02.04.2001;nicolas.geser@edu.tbz.ch;"Rosenbergstrasse 16";8630;"Rüti ZH";;
+694977;Hefti;Finn;"Informatiker Applikationsentwicklung";"AP16 b";18.12.2001;finn.hefti@edu.tbz.ch;"Spiegelgasse 29";8001;Zürich;"044 272 75 29";
+700262;Höhn;Lukas;"Informatiker Applikationsentwicklung";"AP16 b";02.05.2000;lukas.hoehn@edu.tbz.ch;"Landstrasse 26";7252;"Klosters Dorf";;
+679150;Joos;Andri;"Informatiker Applikationsentwicklung";"AP16 b";14.08.1999;andri.joos@edu.tbz.ch;"Walkiweg 9";7249;Serneus;;
+693057;Kolusari;Ciwan;"Informatiker Applikationsentwicklung";"AP16 b";03.11.2000;ciwan.kolusari@edu.tbz.ch;"Spitalstrasse 33";8952;Schlieren;"043 536 58 56";
+668557;Lanbacher;Tim;"Informatiker Applikationsentwicklung";"AP16 b";13.03.2000;tim.lanbacher@edu.tbz.ch;"Neudorfstrasse 44";8820;Wädenswil;"044 780 00 51";
+693307;Marinkovic;Dusan;"Informatiker Applikationsentwicklung";"AP16 b";13.02.2001;dusan.marinkovic@edu.tbz.ch;"Richtiring 8";8304;Wallisellen;;
+670263;Morf;Mischa;"Informatiker Applikationsentwicklung";"AP16 b";26.12.2000;mischa.morf@edu.tbz.ch;"Töpferstrasse 21";8400;Winterthur;;
+698061;Piatti;Matteo;"Informatiker Applikationsentwicklung";"AP16 b";15.05.2000;matteo.piatti@edu.tbz.ch;"Weidenstrasse 32";8645;Jona;;
+669838;Rose;Justin;"Informatiker Applikationsentwicklung";"AP16 b";24.11.2000;justin.rose@edu.tbz.ch;"Püntstrasse 18";8132;"Egg b. Zürich";"044 984 02 87";
